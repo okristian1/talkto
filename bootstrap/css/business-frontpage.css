@@ -44,9 +44,6 @@ footer {
     font-size: large;
 },
 
-.navbar navbar-inverse navbar-fixed-top {
-    background-color:red;
-}
 
 .quote {
     background-color: orangered;
@@ -93,6 +90,12 @@ top: 0px;
 
 .icon-right-border {
   border-right: 1px solid #d5d5d5;
-height: 150px;
+  height: 110px;
 }
+
+.marketing {
+    padding: 45px 0px 45px;
+}
+
+
 
