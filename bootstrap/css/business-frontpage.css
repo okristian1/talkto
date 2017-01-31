@@ -1,0 +1,98 @@
+/*
+ * Start Bootstrap - Business Frontpage (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    padding-top: 80px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    font-weight:bold
+}
+
+/* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
+
+.business-header {
+    height: 400px;
+    background: url('../img/banner_1.jpg') center center no-repeat scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* Customize the text color and shadow color and to optimize text legibility. */
+
+.tagline {
+    text-shadow: 0 0 10px #000;
+    color: #fff;
+}
+
+.img-center {
+    margin: 0 auto;
+}
+
+footer {
+    margin: 0px 0px;
+    padding: 10px 10px; 
+    background-color:darkslategray
+}
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 80px;
+    height: 80px;
+    padding-top: 10px;
+    font-size: large;
+},
+
+.navbar navbar-inverse navbar-fixed-top {
+    background-color:red;
+}
+
+.quote {
+    background-color: orangered;
+    height:150px;
+    color: white;
+    padding-top: 10px;
+}
+
+
+.contact-form {
+    margin: 15px 0px 30px;
+}
+.contact-form .textarea {
+    min-height:220px; resize:none;
+    background-color: lightgrey;
+}
+.form-control {
+    box-shadow:none; border-color:#eee; height:49px;
+    background-color: lightgrey;
+    
+}
+.form-control:focus { 
+    box-shadow:none; border-color:;
+}
+.form-control-feedback {
+    line-height:50px;
+}
+.main-btn {
+    background: orangered; border-color:white; color:#fff;
+}
+.main-btn:hover { 
+    background:#00a491;color:#fff;
+}
+.form-control-feedback {
+line-height: 50px;
+top: 0px;
+}
+
+.btn-talktoo {
+    background-color: orangered;
+    color:white;
+    border: white;
+}
+
+.icon-right-border {
+  border-right: 1px solid #d5d5d5;
+height: 150px;
+}
+
