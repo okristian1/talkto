@@ -45,7 +45,7 @@
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right text-center">
                     <li>
                         <a href="#">Hjem</a>
                     </li>
@@ -61,13 +61,14 @@
 
     <!-- Image Background Page Header -->
     <!-- Note: The background image is set within the business-casual.css file. -->
-    <header class="business-header">
+    <header class="business-header" background="img/banner_1.jpg" >
         <div class="container">
-            <div class="row"><br><br><br><br><br>
+            <div class="row"><br><br>
                 <div class="col-lg-12 text-center">
+                    <br><br><br>
                     <h1 class="tagline">Talk to mediebyrå</h1>
                     <p class="tagline lead">Ditt eksterne markedsapparat!</p>
-                    <a class="btn btn-talktoo btn-lg">Kontakt oss i dag</a>
+                    <a class="btn btn-talkto btn-lg">Kontakt oss i dag</a>
                 </div>
             </div>
         </div>
@@ -78,15 +79,15 @@
         <br>
         <div class="row text-center">
             <div class="col-md-4 col-xs-12 icon-right-border">
-                <img class="img-responsive img-center" width="100px" src="img/icon_digitalmarkedsforing.png" alt="">
+                <img class="img-responsive img-center" width="80px" src="img/icon_digitalmarkedsforing.png" alt="">
                     <h2>Digital Markedsføring</h2>
             </div>
             <div class="col-md-4 col-xs-12 icon-right-border">
-                <img class="img-responsive img-center" width="100px" src="img/icon_sms.png" alt="">
+                <img class="img-responsive img-center" width="80px" src="img/icon_sms.png" alt="">
                 <h2>SMS & Kundeklubb</h2>
             </div>
             <div class="col-md-4 col-xs-12">
-                <img class="img-responsive img-center" width="100px" src="img/icon_dengodeideen.png" alt="">
+                <img class="img-responsive img-center" width="80px" src="img/icon_dengodeideen.png" alt="">
                 <h2>Den gode ideen</h2>
             </div>
         </div>
@@ -105,9 +106,11 @@
 
 <br>
         <!-- /.row -->
-    <div class="container">
-	<div class="row text-center">
+<div class="container">
+	<div class="text-center contact-form-div">
+        <br>
         <h2>Ta kontakt med oss i dag</h2>
+        <br>
 		<form role="form" id="contact-form" class="contact-form">
                     <div class="row">
                 		<div class="col-md-4 col-md-offset-0 col-xs-10 col-xs-offset-1">
@@ -134,19 +137,18 @@
                   		</div>
                   	</div>
                     </div>
-                    <div class="row text-center">
+                <div class="row text-center">
                     <div class="col-md-12">
-                  <button type="submit" class="btn btn-talktoo btn-lg">Send</button>
+                  <button type="submit" class="btn btn-talkto btn-lg">Send</button>
                   </div>
                   </div>
                 </form>
-	</div>
+           	</div>
 </div>
     <!-- /.container -->
     
     <!-- Footer -->
         <footer>
-    <!-- Footer Container -->
 <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -156,7 +158,6 @@
             <!-- /.row -->
         </div>
             <!-- /.Footer Container -->
-            
         </footer>
 
     <!-- jQuery -->
@@ -165,8 +166,15 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/js/bootstrapValidator.min.js"></script>
-
-    
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script src="banner.js"></script>
+  <script>
+  $('.business-header').click(function(){
+    $(this).css("background", "url(img/banner_2.jpg) no-repeat");  });
+  </script>
 </body>
 
 </html>

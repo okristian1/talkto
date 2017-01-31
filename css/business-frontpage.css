@@ -6,13 +6,13 @@
 
 body {
     padding-top: 80px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    font-weight:bold
+    font-weight:bold;
 }
 
 /* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
 
 .business-header {
-    height: 400px;
+    height: 500px;
     background: url('../img/banner_1.jpg') center center no-repeat scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -32,29 +32,32 @@ body {
 }
 
 footer {
-    margin: 0px 0px;
-    padding: 10px 10px; 
+    padding: 10px; 
     background-color:darkslategray
 }
+
+
+
 .navbar-brand,
 .navbar-nav li a {
     line-height: 80px;
     height: 80px;
     padding-top: 10px;
     font-size: large;
-},
+}
 
 
 .quote {
-    background-color: orangered;
+    background-color: #ff5e00;
     height:150px;
     color: white;
     padding-top: 10px;
 }
 
 
-.contact-form {
-    margin: 15px 0px 30px;
+.contact-form-div {
+    margin-top:80px;
+    margin-bottom: 50px;
 }
 .contact-form .textarea {
     min-height:220px; resize:none;
@@ -66,15 +69,15 @@ footer {
     
 }
 .form-control:focus { 
-    box-shadow:none; border-color:;
+    box-shadow:none; border-color:
 }
 .form-control-feedback {
     line-height:50px;
 }
 .main-btn {
-    background: orangered; border-color:white; color:#fff;
+    background: #ff5e00; border-color:white; color:#fff;
 }
-.main-btn:hover { 
+.talkto:hover { 
     background:#00a491;color:#fff;
 }
 .form-control-feedback {
@@ -82,10 +85,13 @@ line-height: 50px;
 top: 0px;
 }
 
-.btn-talktoo {
-    background-color: orangered;
+.btn-talkto {
+    background-color: #ff5e00;
     color:white;
     border: white;
+}
+.btn-talkto:hover { 
+    background:#ff7600;color:#fff;
 }
 
 .icon-right-border {
@@ -94,8 +100,10 @@ top: 0px;
 }
 
 .marketing {
-    padding: 45px 0px 45px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
+
 
 
 
