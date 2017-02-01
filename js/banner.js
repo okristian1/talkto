@@ -1,14 +1,23 @@
-var images = [];
-images[0] = "../img/banner_2.jpg";
-images[1] = "../img/banner_1.jpg";
+$(function () {
+    var header = $('.business-header');
+    var backgrounds = [
+      'url(../img/banner_2.jpg)', 
+      'url(../img/banner_1.jpg)'];
+    var current = 0;
 
-var i = 0;
-setInterval(fadeDivs, 3000);
+    function nextBackground() {
+        header.css(
+            'background',
+        backgrounds[current = ++current % backgrounds.length]);
+             setTimeout(nextBackground, 5000);
 
-function fadeDivs() {
-    i = i < images.length ? i : 0;
-    $('.business_header'.css(('background-image', 'url(' + images[i] + ')'))).fadeOut(100, function(){
-        $(this).attr('src', images[i]).fadeIn(100);
-    })
-    i++;
-}
+    header.css('background-size', 'cover');
+    }
+
+    setTimeout(nextBackground, 5000);
+    header.css('background', backgrounds[0]);
+
+});
+
+
+
