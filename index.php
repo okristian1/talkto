@@ -79,15 +79,15 @@
         <br>
         <div class="row text-center">
             <div class="col-md-4 col-xs-12 icon-right-border">
-                <img class="img-responsive img-center" width="80px" src="img/icon_digitalmarkedsforing.png" alt="">
+                <img class="img-responsive img-center iconA" width="80px" src="img/icon_digitalmarkedsforing.png" alt="">
                     <h2>Digital Markedsføring</h2>
             </div>
             <div class="col-md-4 col-xs-12 icon-right-border">
-                <img class="img-responsive img-center" width="80px" src="img/icon_sms.png" alt="">
+                <img class="img-responsive img-center iconB" width="80px" src="img/icon_sms.png" alt="">
                 <h2>SMS & Kundeklubb</h2>
             </div>
             <div class="col-md-4 col-xs-12">
-                <img class="img-responsive img-center" width="80px" src="img/icon_dengodeideen.png" alt="">
+                <img class="img-responsive img-center iconC" width="80px" src="img/icon_dengodeideen.png" alt="">
                 <h2>Den gode ideen</h2>
             </div>
         </div>
@@ -171,9 +171,48 @@
 
     <!-- Banner switcher -->
     <script src="js/banner.js"></script>
+    <!-- Icon switcher -->
+    <script src="js/icons.js"></script>
     <!-- Form validatior  -->
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/js/bootstrapValidator.min.js"></script>
-    <script
+    
+
+<?php
+$servername = "localhost";
+$username = "testuser";
+$password = "test123test";
+$dbname = "talkto";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+
+$sql = "SELECT * FROM talkto";
+$result = $conn->query($sql);
+$data = array();
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo $row["icons"]."<br>";
+        $data[] = $row;
+    }
+} else {
+    echo "0 results";
+}
+$conn->close();
+?>
+
+<script>
+    var myServerData = <?=json_encode($data)?>; // don't forget to sanitize 
+    console.log(myServerData );
+    var iconB = myServerData[1].icons;
+    console.log(iconB);
+
+</script>
 
 </body>
 
